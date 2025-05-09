@@ -1,19 +1,20 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-natscore",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node for nats.io",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "nats.io"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "P. Nocera",
+    "email": "pnocera@globalcents.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/GlobalCents-CSRepo/n8n-nodes-natscore.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -36,12 +37,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/NatsNKeyApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/NatsCorePublish/NatsCorePublish.node.js"
     ]
   },
   "devDependencies": {
@@ -54,5 +53,10 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "@nats-io/nats-core": "^3.0.2",
+    "@nats-io/transport-node": "^3.0.2",
+    "@types/node": "^22.15.17"
   }
 }
