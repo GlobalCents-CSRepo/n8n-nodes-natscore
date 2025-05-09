@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-natscore",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "n8n node for nats.io",
   "keywords": [
     "n8n-community-node-package",
@@ -49,10 +49,11 @@
     "gulp": "^4.0.2",
     "prettier": "^3.3.2",
     "typescript": "^5.5.3",
-    "@types/node": "^22.15.17"
+    "@types/node": "^22.15.17",
+    "n8n-workflow": "*"
   },
   "peerDependencies": {
-    "n8n-workflow": "*"
+    "n8n-workflow": "1.70.0"
   },
   "dependencies": {
     "@nats-io/nats-core": "^3.0.2",

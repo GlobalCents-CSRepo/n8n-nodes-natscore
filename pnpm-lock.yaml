@@ -14,9 +14,6 @@ importers:
       '@nats-io/transport-node':
         specifier: ^3.0.2
         version: 3.0.2
-      n8n-workflow:
-        specifier: '*'
-        version: 1.48.0
     devDependencies:
       '@types/node':
         specifier: ^22.15.17
@@ -33,6 +30,9 @@ importers:
       gulp:
         specifier: ^4.0.2
         version: 4.0.2
+      n8n-workflow:
+        specifier: '*'
+        version: 1.48.0
       prettier:
         specifier: ^3.3.2
         version: 3.3.2

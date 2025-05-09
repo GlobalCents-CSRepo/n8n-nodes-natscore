@@ -10,7 +10,7 @@ import { connect } from "@nats-io/transport-node";
 import util from 'util';
 
 
-export class NatsCorePublishNode implements INodeType {
+export class NatsCorePublish implements INodeType {
 
 	description: INodeTypeDescription = NatsCorePublishDescription;
 
