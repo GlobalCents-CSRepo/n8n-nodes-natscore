@@ -14,13 +14,13 @@ importers:
       '@nats-io/transport-node':
         specifier: ^3.0.2
         version: 3.0.2
-      '@types/node':
-        specifier: ^22.15.17
-        version: 22.15.17
       n8n-workflow:
         specifier: '*'
         version: 1.48.0
     devDependencies:
+      '@types/node':
+        specifier: ^22.15.17
+        version: 22.15.17
       '@typescript-eslint/parser':
         specifier: ^7.15.0
         version: 7.15.0(eslint@8.57.0)(typescript@5.5.3)
