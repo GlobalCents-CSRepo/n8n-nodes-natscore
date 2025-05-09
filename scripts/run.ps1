@@ -6,13 +6,13 @@
 # copy dist folder content to data/custom folder
 # delete data/custom folder content first
 #
-if (Test-Path -Path "${PWD}/data/custom") {
-		Remove-Item -Path "${PWD}/data/custom/*" -Recurse -Force
-} else {
-		New-Item -Path "${PWD}/data/custom" -ItemType Directory
-}
-
-Copy-Item -Path "${PWD}/dist/*" -Destination "${PWD}/data/custom" -Recurse -Force
+# if (Test-Path -Path "${PWD}/data/custom") {
+# 		Remove-Item -Path "${PWD}/data/custom/*" -Recurse -Force
+# } else {
+# 		New-Item -Path "${PWD}/data/custom" -ItemType Directory
+# }
+#
+# Copy-Item -Path "${PWD}/dist/*" -Destination "${PWD}/data/custom" -Recurse -Force
 
 try {
     docker exec n8n stop
@@ -35,6 +35,6 @@ docker run --rm --name n8n `
     -p 5678:5678 `
     -e N8N_EDITOR_BASE_URL='http://localhost:5678' `
     -e N8N_RUNNERS_ENABLED=true `
-    -e N8N_CUSTOM_NODES: '["n8n-nodes-natscore"]' `
+    -e N8N_CUSTOM_NODES='["n8n-nodes-natscore"]' `
     --stop-timeout 60 `
     docker.n8n.io/n8nio/n8n
