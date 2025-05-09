@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-natscore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "n8n node for nats.io",
   "keywords": [
     "n8n-community-node-package",
@@ -23,7 +23,6 @@
   "packageManager": "pnpm@9.1.4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
