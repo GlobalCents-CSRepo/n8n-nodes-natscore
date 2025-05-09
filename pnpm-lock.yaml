@@ -8,16 +8,16 @@ importers:
 
   .:
     dependencies:
-      n8n-workflow:
-        specifier: '*'
-        version: 1.48.0
-    devDependencies:
       '@nats-io/nats-core':
         specifier: ^3.0.2
         version: 3.0.2
       '@nats-io/transport-node':
         specifier: ^3.0.2
         version: 3.0.2
+      n8n-workflow:
+        specifier: '*'
+        version: 1.48.0
+    devDependencies:
       '@types/node':
         specifier: ^22.15.17
         version: 22.15.17
